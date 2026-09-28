@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RexmoBd | My Orders</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar flex container">
+    <a href="index.html" class="logo">Rexmo<span>Bd.</span></a>
+    <ul class="navlist flex">
+      <li><a href="index.html" class="link">home</a></li>
+      <li><a href="shop.html" class="link">shop</a></li>
+      <li><a href="orders.html" class="link">orders</a></li>
+      <li><a href="admin.html" class="link">admin</a></li>
+      <li><a href="index.html#contact" class="link">contact</a></li>
+      <li class="nav-icons flex">
+        <a href="shop.html" class="icon" id="search-trigger" title="Search products"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="login.html" class="icon" id="user-icon" title="Login or account"><i class="fa-solid fa-user"></i></a>
+        <a href="javascript:void(0)" class="icon icon-active" id="cart-trigger" title="Open cart"><i class="fa-solid fa-shopping-bag"></i></a>
+      </li>
+    </ul>
+    <a href="javascript:void(0)" class="hamburger" id="hamburger-toggle"><i class="fa-solid fa-bars"></i></a>
+  </nav>
+</header>
+
+<main class="page-shell">
+  <section class="page-hero">
+    <div class="container">
+      <h1>My Orders</h1>
+      <p>This page demonstrates the assignment's borrowed-book and return workflow as clothing orders/reservations.</p>
+      <div class="line"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div id="orders-list" class="order-list"></div>
+    </div>
+  </section>
+</main>
+<footer class="section">
+  <div class="footer-container container flex wrap">
+    <ul class="footer-list">
+      <li><a href="index.html#contact" class="footer-link">About Us</a></li>
+      <li><a href="shop.html" class="footer-link">Online Store</a></li>
+      <li><a href="index.html#latest-news" class="footer-link">Style Updates</a></li>
+      <li><a href="index.html#contact" class="footer-link">Contact Us</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="login.html" class="footer-link">Login</a></li>
+      <li><a href="javascript:void(0)" class="footer-link" id="footer-cart-link">Your Cart</a></li>
+      <li><a href="orders.html" class="footer-link">My Orders</a></li>
+      <li><a href="shop.html" class="footer-link">Continue Shopping</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="index.html#latest-news" class="footer-link">Style Guide</a></li>
+      <li><a href="index.html#contact" class="footer-link">Customer Care</a></li>
+      <li><a href="orders.html" class="footer-link">Returns</a></li>
+      <li><a href="admin.html" class="footer-link">Shop Management</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li class="footer-logo"><a href="index.html" class="logo">Rexmo<span>Bd.</span></a></li>
+      <li><p class="detail">rexmo.bd@gmail.com</p></li>
+      <li><p class="detail">Dhaka City, Bangladesh</p></li>
+      <li><p class="detail">Customer care: +880 1609 520295</p></li>
+    </ul>
+  </div>
+</footer>
+<div id="site-message" class="site-message"></div>
+<script src="main.js"></script>
+</body>
+</html>

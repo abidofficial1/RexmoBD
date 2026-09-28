@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RexmoBd | Clothing & Fashion Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!--navbar Here  -->
+  <!-- Here is change and reason: Connected the existing RexmoBd navigation to the new Home, Shop, Orders, Login, Contact, and cart actions required by the assignment. -->
+  <header>
+    <nav class="navbar flex container ">
+      <a href="index.html" class="logo">
+        Rexmo<span>Bd.</span>
+      </a>
+
+      <ul class="navlist flex">
+        <li>
+          <a href="index.html" class="link link-active">home</a>
+
+        </li>
+        <li>
+          <a href="shop.html" class="link">shop</a>
+
+        </li>
+        <li>
+          <a href="orders.html" class="link">orders</a>
+
+        </li>
+        <li>
+          <a href="#latest-news" class="link">blog</a>
+
+        </li>
+        <li>
+          <a href="#contact" class="link">contact</a>
+
+        </li>
+        <li class="nav-icons flex">
+
+          <a href="shop.html" class="icon" id="search-trigger" title="Search products">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+
+          </a>
+
+          <a href="login.html" class="icon" id="user-icon" title="Login or account">
+            <i class="fa-solid fa-user"> </i>
+
+          </a>
+
+          <a href="javascript:void(0)" class="icon icon-active" id="cart-trigger" title="Open cart">
+            <i class="fa-solid fa-shopping-bag"> </i>
+
+          </a>
+        </li>
+
+
+
+      </ul>
+      <a href="javascript:void(0)" class="hamburger" id="hamburger-toggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+
+
+      </a>
+
+
+    </nav>
+
+
+  </header>
+
+
+  <!--section Here-->
+  <main>
+
+    <!-- Here is change and reason: Connected the existing hero Shop Now action to the new product catalogue without changing the original hero design. -->
+    <section class="hero ">
+
+      <div class="hero-content flex container">
+        <div>
+
+          <h3>Winter Fashion</h3>
+          <h1>New Collection</h1>
+          <h4>Big sale of this week up to <span>20%</span></h4>
+          <button type="button" data-action="shop">Shop Now</button>
+
+
+
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Here is change and reason: Connected the existing category buttons to functional catalogue filters while preserving the original category layout and images. -->
+    <section class="section">
+
+      <div class="category-container container">
+        <div class="category">
+          <img src="images/for men.jpg">
+          <button type="button" data-category="Men">for Men's</button>
+
+        </div>
+        <div class="category">
+          <img src="images/for kids.jpg">
+          <button type="button" data-category="Kids">for Kid's</button>
+
+        </div>
+        <div class="category">
+          <img src="images/for accessories.jpg">
+          <button type="button" data-category="Accessories">Accessories</button>
+
+        </div>
+        <div class="category">
+          <img src="images/for women.jpg">
+          <button type="button" data-category="Women">for Women's</button>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>NEW PRODUCT</h2>
+        <div class="line"></div>
+        <div class="card-container flex  wrap">
+
+           <div class="card sale" data-product-category="Accessories">
+
+           <img src="images/card-image1 (1).jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Edition Shoes
+              </p>
+                <div class="price">
+                 <del>$120.00</del>
+                 <span class="amount">$100.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card sale">
+
+           <img src="images/card-image2.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Leather Black Handbag 
+              </p>
+                <div class="price" >
+                 <del>$150.00</del>
+                 <span class="amount">$135.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card new">
+
+           <img src="images/card-image3.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Edition  Jacket
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$115.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card">
+
+           <img src="images/card-image4.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Edition  Jacket
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$95.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+        </div>
+
+      </div>
+      
+
+    </section>
+    <section class="section">
+      <div class="sale-container">
+        
+        <h3>NEW TREND 2026</h3>
+        
+        <h1 >Women's Collection</h1>
+        <div class="line"></div>
+        <h4>BIG SALE OF THIS WEEK</h4>
+        <button type="button" data-category="Women">shop now</button>
+
+
+
+      </div>
+
+    </section>
+    <section class="section">
+
+           <div class="container">
+               <h2>BEST SALE</h2>
+                <Div class="line"></Div>
+
+                <div class="card-container flex  wrap">
+
+           <div class="card sale">
+
+           <img src="images/card-image5.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Bag
+              </p>
+                <div class="price">
+                 <del>$55.00</del>
+                 <span class="amount">$37.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div  class="card">
+
+           <img src="images/card-image6.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Umbrella
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$40.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card">
+
+           <img src="images/card-image7.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                 Mens Wrist Bands
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$10.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card new">
+
+           <img src="images/card-image8.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Men’s Suspenders 
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$47.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+          </div>
+          <div class="card-container flex  wrap">
+
+           <div class="card sale">
+
+           <img src="images/card-image9.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Shoes
+              </p>
+                <div class="price">
+                 <del>$80.00</del>
+                 <span class="amount">$63.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card sale">
+
+           <img src="images/card-image10.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Leather Handbag 
+              </p>
+                <div class="price" >
+                 <del>$150.00</del>
+                 <span class="amount">$135.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card">
+
+           <img src="images/card-image11.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Leather Bag
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$70.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+           <div class="card new">
+
+           <img src="images/card-image12.jpg">
+             <div class="card-content">
+
+              <p class="title">
+                Exclusive Shirt
+              </p>
+                <div class="price" >
+                 
+                 <span class="amount">$20.00</span>
+                </div>
+              <button class="add-to-cart">Add to Cart</button>
+             </div>
+           </div>
+        </div>
+
+
+           </div>
+
+
+
+    </section>
+     
+
+
+
+
+    
+      <section class="section">
+
+         <div class="secondary-bg">
+         <div class="container flex wrap">
+
+            <div class="box">
+              <i class="fa-solid fa-truck"></i>
+               <h5>
+                <a href="shop.html">Free Shipping </a>
+              </h5>
+              <p class="des">
+
+                Free shipping on order over 50$
+              </p>
+
+
+
+
+            </div>
+
+
+             <div class="box">
+              <i class="fa-solid fa-money-bill-1"></i>
+               <h5>
+                <a href="shop.html">Cash on Delivery</a>
+              </h5>
+              <p class="des">
+
+                The Internet Trend To Repeat
+              </p>
+
+
+
+
+            </div> <div class="box">
+              <i class="fa-solid fa-gift"></i>
+               <h5>
+                <a href="login.html">Gift for All </a>
+              </h5>
+              <p class="des">
+
+                Receive Gift When Subscribe
+              </p>
+
+
+
+
+            </div> <div class="box">
+              <i class="fa-solid fa-clock"></i>
+               <h5>
+                <a href="index.html#contact">Opening All Week </a>
+              </h5>
+              <p class="des">
+
+                9.00 am-10.00pm
+              </p>
+
+
+
+
+            </div>
+          
+
+             </div>
+
+
+
+         </div>
+
+
+
+
+
+
+      </section>
+           
+    <section class="section">
+      <div class="container">
+       
+        <h2>NEW LATEST</h2>
+
+         <div class="line"></div>
+         <div class="blog-container flex wrap">
+
+           <div class="blog-box">
+
+            <img src="images/NEWSSSSS.jpeg">
+            <div class="blog-content">
+
+             <h3 class="heading">NEW TREND 2026</h3>
+              <P>Discover the latest seasonal styles designed for everyday comfort, modern streetwear, and effortless everyday looks.</P>
+                <a href="javascript:void(0)" class="blog-link" data-article="0">Read More</a>
+            </div>
+
+           </div>
+           <div class="blog-box">
+
+            <img src="images/update news 2.jpeg">
+            <div class="blog-content">
+
+             <h3 class="heading">NEW TREND 2026</h3>
+              <P>Refresh your wardrobe with carefully selected pieces that balance practical comfort and current fashion trends.</P>
+                <a href="javascript:void(0)" class="blog-link" data-article="1">Read More</a>
+            </div>
+
+           </div>
+           <div class="blog-box">
+
+            <img src="images/news-image3.jpg">
+            <div class="blog-content">
+
+             <h3 class="heading">NEW TREND 2026</h3>
+              <P>Explore statement accessories and versatile essentials chosen to complete your seasonal outfits.</P>
+                <a href="javascript:void(0)" class="blog-link" data-article="2">Read More</a>
+            </div>
+
+           </div>
+
+
+         </div>
+
+
+      </div>
+
+
+
+
+
+
+    </section>
+
+    <!-- Here is change and reason: Added newsletter validation and a contact anchor while keeping the existing dark newsletter/social section. -->
+    <section class="section" id="contact">
+      <div class="secondary-bg">
+
+       <form class="container flex wrap" id="newsletter-form">
+
+         <h3>
+          Sign up For Send Newsletter
+         </h3>
+          <div class="input-container flex">
+          <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" required>
+           <span id="newsletter-message" class="form-message" aria-live="polite"></span>
+           <button type="submit">Subscribe</button>
+
+          </div>
+
+            <div class="social-icons flex">
+
+              <a href="https://www.facebook.com/" class="media" target="_blank" rel="noopener">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/" class="media" target="_blank" rel="noopener">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://www.google.com/" class="media" target="_blank" rel="noopener">
+                <i class="fa-brands fa-google"></i>
+              </a>
+              <a href="https://www.behance.net/" class="media" target="_blank" rel="noopener">
+                <i class="fa-brands fa-behance"></i>
+              </a>
+              <a href="https://www.linkedin.com/" class="media" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+
+       </form>
+
+
+
+
+
+       </div>
+
+
+      </div>
+
+
+
+
+    </section>
+      
+
+           
+
+
+    
+
+  </main>
+
+     <footer class="section">
+      <div class="footer-container container flex wrap">
+
+       <ul class="footer-list">
+
+        <li>
+          <a href="index.html#contact" class="footer-link">About Us</a>
+        </li>
+         <li>
+          <a href="shop.html" class="footer-link">Online Store</a>
+        </li>
+         <li>
+          <a href="index.html#latest-news" class="footer-link">Blog</a>
+        </li>
+         <li>
+          <a href="index.html#contact" class="footer-link">Contact Us</a>
+        </li>
+
+
+
+       </ul>
+       <ul class="footer-list">
+
+        <li>
+          <a href="login.html" class="footer-link">Login</a>
+        </li>
+         <li>
+          <a href="javascript:void(0)" class="footer-link" id="footer-cart-link">Your Cart</a>
+        </li>
+         <li>
+          <a href="orders.html" class="footer-link">My Orders</a>
+        </li>
+         <li>
+          <a href="shop.html" class="footer-link">Continue Shopping</a>
+        </li>
+
+
+
+       </ul>
+       <ul class="footer-list">
+
+        <li>
+          <a href="index.html#latest-news" class="footer-link">Style Guide</a>
+        </li>
+         <li>
+          <a href="index.html#contact" class="footer-link">Customer Care</a>
+        </li>
+         <li>
+          <a href="orders.html" class="footer-link">Returns</a>
+        </li>
+         <li>
+          <a href="admin.html" class="footer-link">Shop Management</a>
+        </li>
+
+
+
+       </ul>
+       <ul class="footer-list">
+        <li class="footer-logo">
+        <a href="index.html" class="logo">
+        Rexmo<span>Bd.</span>
+      </a>
+
+
+        </li>
+         <li>
+         <p class="detail">rexmo.bd@gmail.com</p>
+         </li>
+         <li>
+         <p class="detail">Dhaka City, Bangladesh</p>
+         </li>
+         <li>
+         <p class="detail">+08801609520295</p>
+         </li>
+
+          
+       </ul>
+
+      </div>
+
+
+     </footer>
+
+
+<!-- Here is change and reason: Extended the existing signup modal with full-name, email, password, confirmation, and localStorage registration validation. -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-header">
+      <h2>Create Account</h2>
+      <p>Join RexmoBd. for exclusive offers</p>
+    </div>
+    <form id="signup-form">
+      <div id="signup-message" class="form-message" aria-live="polite"></div>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="signup-name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="signup-email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="signup-password" placeholder="Create a password" minlength="6" required>
+      </div>
+      <button type="submit" class="signup-submit">Sign Up</button>
+    </form>
+    <p class="modal-footer">Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</div>
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

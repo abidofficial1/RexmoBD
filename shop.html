@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RexmoBd | Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar flex container">
+    <a href="index.html" class="logo">Rexmo<span>Bd.</span></a>
+    <ul class="navlist flex">
+      <li><a href="index.html" class="link">home</a></li>
+      <li><a href="shop.html" class="link">shop</a></li>
+      <li><a href="orders.html" class="link">orders</a></li>
+      <li><a href="admin.html" class="link">admin</a></li>
+      <li><a href="index.html#contact" class="link">contact</a></li>
+      <li class="nav-icons flex">
+        <a href="shop.html" class="icon" id="search-trigger" title="Search products"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="login.html" class="icon" id="user-icon" title="Login or account"><i class="fa-solid fa-user"></i></a>
+        <a href="javascript:void(0)" class="icon icon-active" id="cart-trigger" title="Open cart"><i class="fa-solid fa-shopping-bag"></i></a>
+      </li>
+    </ul>
+    <a href="javascript:void(0)" class="hamburger" id="hamburger-toggle"><i class="fa-solid fa-bars"></i></a>
+  </nav>
+</header>
+
+<main class="page-shell">
+  <section class="page-hero">
+    <div class="container">
+      <h1>RexmoBd Shop</h1>
+      <p>Browse the clothing catalogue, filter by category, and reserve products through the demonstration order workflow.</p>
+      <div class="line"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="catalogue-toolbar">
+        <input id="product-search" class="catalogue-search" type="search" placeholder="Search products by name, category, or style..." aria-label="Search products">
+        <div class="filter-tabs" role="group" aria-label="Product categories">
+          <button type="button" class="filter-btn active" data-category="All">All</button>
+          <button type="button" class="filter-btn" data-category="Men">Men</button>
+          <button type="button" class="filter-btn" data-category="Women">Women</button>
+          <button type="button" class="filter-btn" data-category="Kids">Kids</button>
+          <button type="button" class="filter-btn" data-category="Accessories">Accessories</button>
+        </div>
+        <div id="accessory-tabs" class="accessory-tabs" role="group" aria-label="Accessory gender">
+          <button type="button" class="filter-btn accessory-btn" data-gender="Men">Male Accessories</button>
+          <button type="button" class="filter-btn accessory-btn" data-gender="Women">Female Accessories</button>
+          <button type="button" class="filter-btn accessory-btn" data-gender="All">All Accessories</button>
+        </div>
+      </div>
+      <div id="shop-grid" class="shop-grid"></div>
+    </div>
+  </section>
+</main>
+<footer class="section">
+  <div class="footer-container container flex wrap">
+    <ul class="footer-list">
+      <li><a href="index.html#contact" class="footer-link">About Us</a></li>
+      <li><a href="shop.html" class="footer-link">Online Store</a></li>
+      <li><a href="index.html#latest-news" class="footer-link">Style Updates</a></li>
+      <li><a href="index.html#contact" class="footer-link">Contact Us</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="login.html" class="footer-link">Login</a></li>
+      <li><a href="javascript:void(0)" class="footer-link" id="footer-cart-link">Your Cart</a></li>
+      <li><a href="orders.html" class="footer-link">My Orders</a></li>
+      <li><a href="shop.html" class="footer-link">Continue Shopping</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li><a href="index.html#latest-news" class="footer-link">Style Guide</a></li>
+      <li><a href="index.html#contact" class="footer-link">Customer Care</a></li>
+      <li><a href="orders.html" class="footer-link">Returns</a></li>
+      <li><a href="admin.html" class="footer-link">Shop Management</a></li>
+    </ul>
+    <ul class="footer-list">
+      <li class="footer-logo"><a href="index.html" class="logo">Rexmo<span>Bd.</span></a></li>
+      <li><p class="detail">rexmo.bd@gmail.com</p></li>
+      <li><p class="detail">Dhaka City, Bangladesh</p></li>
+      <li><p class="detail">Customer care: +880 1609 520295</p></li>
+    </ul>
+  </div>
+</footer>
+<div id="site-message" class="site-message"></div>
+<script src="main.js"></script>
+</body>
+</html>
